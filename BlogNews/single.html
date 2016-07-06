@@ -1,0 +1,755 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta charset="UTF-8">
+    <link href="favicon.ico" rel="ICON" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="css/style.css" media="all"/>
+    <link rel="stylesheet" href="css/bootstrap.css" media="all"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/fonts.css"/>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/js.min.js" charset="utf-8"></script>
+    <!--<script type="text/javascript" src="js/bootstrap.js" charset="utf-8"></script>-->
+</head>
+<body>
+
+<div id="MAIN_backgroundContainer">
+    <div id="MAIN_featureImage" class="MAIN_featureImageNews"> </div>
+    <div id="MAIN_siteContainer">
+        <div id="MAIN_navContainer">
+            <div id="MAIN_logo">
+                <a href="index.html"><img src="images/msa-logo.png" alt="MSA"/></a>
+            </div>
+            <div id="MAIN_logomobile">
+                <a href="index.html"><img src="images/msa-logo-mobile.png" alt="MSA"/></a>
+            </div>
+            <div id="MAIN_searchContainer">
+                <form action="https://www.msauk.org/Search-Results" method="get">
+                    <div class="searchcontainer">
+                        <input type="text" name="strSearchTerm" id="strSearchTerm" value="" />
+                    </div>
+                    <input type="image" id="btnSearch" name="btnSearch" src="images/searchIcon.png" alt="Search"/>
+                </form>
+            </div>
+            <div class="clear"></div>
+            <div id="MAIN_navItems">
+                <span class="menu-toggle-container"><a id="menu-toggle" class="anchor-link" href="#">Menu</a></span>
+                <div class="clear"></div>
+                <nav>
+                    <ul id="menu" class="navigation">
+                        <li rel="Home" data-summary="" class="subnav first hasChildren">
+                            <a href="https://www.msauk.org/" >Home</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="About us" data-summary="About the Motor Sports Association" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Home/About-us">About us</a>
+                                        </li>
+                                        <li rel="Contact us" data-summary="Contact the Motor Sports Association" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Home/Contact-us">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle1">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText1"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="News publications" data-summary="" class="subnav  hasChildren">
+                            <a href="https://www.msauk.org/News">News &amp; publications</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Publications" data-summary="Read the MSA Yearbooks, magazines, newsletters and annual reports" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/News-Publications/Publications">Publications</a>
+                                        </li>
+                                        <li rel="Videos" data-summary="Watch the latest videos to see MSA initiatives in action" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/News-Publications/Videos">Videos</a>
+                                        </li>
+                                        <li rel="Regulations" data-summary="Find out how motor sport is regulated and have your say on future rule changes" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Regulations">Regulations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle17">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText17"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="The Sport" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/The-Sport">The Sport</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Types of Motor Sport" data-summary="Find out about the various disciplines of motor sport, from racing, rallying and karting to sprints, hill climbs, trials and more" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Types-of-Motor-Sport">Types of Motor Sport</a>
+                                        </li>
+                                        <li rel="Governance" data-summary="How the MSA regulates and administers UK motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Governance">Governance</a>
+                                        </li>
+                                        <li rel="Regulations" data-summary="Find out how motor sport is regulated and have your say on future rule changes" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Regulations">Regulations</a>
+                                        </li>
+                                        <li rel="National Court" data-summary="Learn about the judicial system for UK motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/National-Court">National Court</a></li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="FIA" data-summary="The governing body of world motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/FIA" target="_self">FIA</a>
+                                        </li>
+                                        <li rel="Social Responsibility" data-summary="How motor sport can contribute to society in areas such as education, the environment, technology and road safety" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Social-Responsibility">Social Responsibility</a>
+                                        </li>
+                                        <li rel="Risk Management"
+                                            data-summary="How motor sport has achieved an excellent safety record" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Risk-Management">Risk Management</a>
+                                        </li>
+                                        <li rel="Awards" data-summary="From championship titles to special awards for outstanding service and achievement" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Awards">Awards</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Dare to be Different" data-summary="Driving Female Talent" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Dare-to-be-Different">Dare to be Different</a>
+                                        </li>
+                                        <li rel="RallyFuture" data-summary="Ensuring a bright future for UK stage rallying by taking steps to further enhance safety" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Rally-Future">RallyFuture</a>
+                                        </li>
+                                        <li rel="Race n Respect" data-summary="" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Race-n-Respect" target="_self">Race 'n' Respect</a>
+                                        </li>
+                                        <li rel="Other organisations"
+                                            data-summary="Useful information on motor sport groups outside the MSA" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Other-motor-sport-organisations">Other organisations</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle23">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText23"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Clubs Organisers" data-summary="" class="subnav hasChildren"><a
+                                href="https://www.msauk.org/Clubs-Organisers">Clubs &amp; Organisers</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="FAQ" data-summary="Are you a club or organiser with have a query? You may find the answer in our frequently asked questions" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/FAQ">FAQ</a>
+                                        </li>
+                                        <li rel="Find Clubs" data-summary="There are 750 MSA-registered motor clubs, so find and join those nearest to you" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Find-Clubs">Find Clubs</a>
+                                        </li>
+                                        <li rel="Regional Associations" data-summary="There are 13 Regional Associations representing hundreds of motor clubs nationwide" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Regional-Associations">Regional Associations</a>
+                                        </li>
+                                        <li rel="Club Development" data-summary="How the MSA can help your club to promote its activities and recruit new members" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Club-Development">Club Development</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Route Authorisation" data-summary="Everything you need to know about planning an event on the public highway" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Route-Authorisation">Route Authorisation</a>
+                                        </li>
+                                        <li rel="Taster Events" data-summary="Recruit new members to your club by running a special Taster Event" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Taster-events">Taster Events</a>
+                                        </li>
+                                        <li rel="Club recognition" data-summary="Official announcements of prospective new clubs and name changes" class="subnav hasChildren">
+                                            <a
+                                                    href="https://www.msauk.org/Clubs/Motor-Clubs-applying-for-Recognition-Changes-to-Recognised-Clubs">Club recognition</a>
+                                        </li>
+                                        <li rel="Login" data-summary="" class="subnav hasChildren">
+                                            <a href="http://members.msauk.org" target="_blank">Login</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Public Liability Certificate" data-summary="" class="subnav hasChildren">
+                                            <a href="http://www.jltgroup.com/sports-insurance/msa/forms-downloads/" target="_blank">Public Liability Certificate</a>
+                                        </li>
+                                        <li rel="Resource centre" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Clubs-Organisers">Resource centre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle16">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText16"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Events" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Events">Events</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Find Events" data-summary="There are 5,000 motor sport events across the UK every year. Search for them here" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Events/Find-Events">Find Events</a>
+                                        </li>
+                                        <li rel="NCAFP Calendar" data-summary="List of UK events open to foreign competitors" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/National-Competitions-Authorised-for-Foreign-Participation">NCAFP Calendar</a>
+                                        </li>
+                                        <li rel="MSA Championships" data-summary="The premier titles in UK motor sport: The MSA British and Home Countries Championships" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/MSA-Championships">MSA Championships</a>
+                                        </li>
+                                        <li rel="F1 British Grand Prix" data-summary="The oldest round of the FIA Formula One World Championship" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/World-Events/F1-British-Grand-Prix">F1 British Grand Prix</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Wales Rally GB" data-summary="The final round of the FIA World Rally Championship (WRC)" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/World-Events/Wales-Rally-GB">Wales Rally GB</a>
+                                        </li>
+                                        <li rel="WEC Silverstone"
+                                            data-summary="World Endurance Championship 6 Hours of Silverstone" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/World-Events/World-Endurance-Championship">WEC Silverstone</a>
+                                        </li>
+                                        <li rel="WRX Lydden Hill" data-summary="FIA World Rallycross Championship at Kents Lydden Hill" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/World-Events/World-Rallycross-Championship">WRX Lydden Hill</a>
+                                        </li>
+                                        <li rel="Spectator safety" data-summary="Top tips for watching live motor sport events" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Events/Spectator-Safety">Spectator safety</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle18">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText18"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Competitors" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Competitors">Competitors</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Starter Packs" data-summary="If you want to go racing, rallying or karting, you will need one of our starter packs" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/Licence-Starter-Packs">Starter Packs</a>
+                                        </li>
+                                        <li rel="Competition Licences" data-summary="Find out if you need a licence to compete, plus how to apply or renew" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Competitors/Competition-Licences">Competition Licences</a>
+                                        </li>
+                                        <li rel="Guidance Advice" data-summary="General guidance on your kit and vehicle that you may find useful" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Competitors/Guidance-/-Advice">Guidance / Advice</a>
+                                        </li>
+                                        <li rel="Coaching" data-summary="Raising standards through a pioneering coaching framework for UK motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Development/Coaching">Coaching</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Disabled motor sport" data-summary="Motor sport enables everyone, whether able-bodied or disabled, to compete against each other on a level playing field. Find out how you can get involved regardless of your disability" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Competitors/Disabled-motor-sport">Disabled motor sport</a>
+                                        </li>
+                                        <li rel="Login" data-summary="" class="subnav hasChildren">
+                                            <a href="http://members.msauk.org" target="_blank">Login</a>
+                                        </li>
+                                        <li rel="Resource Centre" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a
+                                                    href="https://www.msauk.org/Resource-Centre/Competitors-/-Licensing">Resource Centre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle19">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText19"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Marshals" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Marshals">Marshals</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Overview"
+                                            data-summary="The orange army is the power behind UK motor sport" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Marshals/Overview">Overview</a>
+                                        </li>
+                                        <li rel="Training" data-summary="Find out about the training that helps make UK marshals the best in the world" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Marshals/Training">Training</a>
+                                        </li>
+                                        <li rel="ThanksMarshal" data-summary="The marshalling mascot who rubs shoulders with the stars and their cars" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Marshals/ThanksMarshal">#ThanksMarshal</a>
+                                        </li>
+                                        <li rel="Login" data-summary="" class="subnav hasChildren">
+                                            <a href="http://members.msauk.org" target="_blank">Login</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Resource centre" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Marshals">Resource centre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle21">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText21"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Officials" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Officials">Officials</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Roles Training"
+                                            data-summary="Motor sport relies on thousands of highly trained officials to uphold the rules, ensuring safe and fair competition for all" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Officials/Roles-Training">Roles &amp; Training</a>
+                                        </li>
+                                        <li rel="Login" data-summary="" class="subnav hasChildren">
+                                            <a href="http://members.msauk.org" target="_blank">Login</a>
+                                        </li>
+                                        <li rel="Resource centre" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Officials">Resource centre</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle22">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText22"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Get Started" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Get-Started">Get Started</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="FAQ" data-summary="Our frequently asked questions are a great starting point for those looking to get involved in the exciting world of motor sport" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/FAQ">FAQ</a>
+                                        </li>
+                                        <li rel="Types of Motor Sport" data-summary="Find out about the various disciplines of motor sport, from racing, rallying and karting to sprints, hill climbs, trials and more" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/Types-of-Motor-Sport">Types of Motor Sport</a>
+                                        </li>
+                                        <li rel="Starter Packs" data-summary="If you want to go racing, rallying or karting, you will need one of our starter packs" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/Licence-Starter-Packs">Starter Packs</a>
+                                        </li>
+                                        <li rel="Club Motorsport" data-summary="There are local motor clubs across the country and joining yours is the easiest and most cost effective ways to get involved in the sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/Club-Motorsport">Club Motorsport</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Costs" data-summary="Deep pockets are not always necessary and there really is something for everyone, regardless of your budget" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/Costs">Costs</a>
+                                        </li>
+                                        <li rel="Volunteering" data-summary="Join a like-minded community of motor sport enthusiasts and get the best seat in the house" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Get-Started/Volunteering">Volunteering</a>
+                                        </li>
+                                        <li rel="Association of Racing Drivers Schools" data-summary="" class="subnav hasChildren">
+                                            <a href="http://www.ards.co.uk" target="_blank">Association of Racing Drivers Schools</a>
+                                        </li>
+                                        <li rel="British Association of Rally Schools" data-summary="" class="subnav hasChildren">
+                                            <a href="http://www.rallyschools-bars.co.uk/" target="_blank">British Association of Rally Schools</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Association of Racing Kart Schools" data-summary="" class="subnav hasChildren">
+                                            <a href="http://www.arks.co.uk/" target="_blank">Association of Racing Kart Schools</a>
+                                        </li>
+                                        <li rel="Association of Hillclimb Sprint Schools" data-summary="" class="subnav hasChildren">
+                                            <a href="http://ahass.co.uk/" target="_blank">Association of Hillclimb &amp; Sprint Schools</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle20">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText20"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Development" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Development">Development</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="MSA Academy" data-summary="The talent development pathway for the most promising young drivers in UK motor sport" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Development/MSA-Academy/MSA-Academy">MSA Academy</a>
+                                        </li>
+                                        <li rel="Go Motorsport" data-summary="The MSA initiative to boost local motor clubs and get more people involved in grassroots motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Development/Go-Motorsport/Go-Motorsport">Go Motorsport</a>
+                                        </li>
+                                        <li rel="Club Development" data-summary="How the MSA can help your club to promote its activities and recruit new members" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Clubs/Club-Development">Club Development</a>
+                                        </li>
+                                        <li rel="Coaching" data-summary="Raising standards through a pioneering coaching framework for UK motor sport" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Development/Coaching">Coaching</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Motorsports in Schools" data-summary="Get your school involved in motor sport through a number of great initiatives that can aid learning and development" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/The-Sport/CSR/Education">Motorsports in Schools</a>
+                                        </li>
+                                        <li rel="Women in Motorsport" data-summary="Motor sport is one of few sports that allow men and women to compete against each other on a level playing field" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Development/Women-in-Motorsport">Women in Motorsport</a>
+                                        </li>
+                                        <li rel="Regional Training" data-summary="How the MSA helps to develop motor sport governing bodies across the globe" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Development/FIA-Institute-Regional-Training-Provider" >Regional Training</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle24">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText24"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Resource Centre" data-summary="" class="subnav hasChildren">
+                            <a href="https://www.msauk.org/Resource-Centre">Resource Centre</a>
+                            <ul class="subNav">
+                                <li>
+                                    <ul class="subNavColumn">
+                                        <li rel="Competitors Licensing" data-summary="Forms and documents" class="subnav first hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Competitors-/-Licensing">Competitors / Licensing</a>
+                                        </li>
+                                        <li rel="Marshals" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Marshals">Marshals</a>
+                                        </li>
+                                        <li rel="Officials" data-summary="Forms and documents"
+                                            class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Officials">Officials</a>
+                                        </li>
+                                        <li rel="Clubs Organisers" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Clubs-Organisers">Clubs &amp; Organisers</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="Route Authorisation" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Route-Authorisation">Route Authorisation</a>
+                                        </li>
+                                        <li rel="Championships" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Championships">Championships</a>
+                                        </li>
+                                        <li rel="Technical: Car" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Technical-Car">Technical: Car</a>
+                                        </li>
+                                        <li rel="Technical: Kart" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Technical-Kart">Technical: Kart</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="MSA Trainers" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/MSA-Trainers/MSA-Trainers">MSA Trainers</a>
+                                        </li>
+                                        <li rel="Tenders" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Current-invitations-to-tender">Tenders</a>
+                                        </li>
+                                        <li rel="Media" data-summary="Forms documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Media">Media</a>
+                                        </li>
+                                        <li rel="Policies Guidelines" data-summary="Forms and documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/Policies-Guidelines">Policies &amp; Guidelines</a>
+                                        </li>
+                                    </ul>
+                                    <ul class="subNavColumn">
+                                        <li rel="National Court reports" data-summary="Forms documents" class="subnav hasChildren">
+                                            <a href="https://www.msauk.org/Resource-Centre/National-Court-reports">National Court reports</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="subNavBox">
+                                    <ul class="subNavSummary">
+                                        <li class="navSummaryTitle" id="navSummaryTitle327">News publications</li>
+                                        <li class="navSummaryText" id="navSummaryText327"></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li rel="Blog" data-summary="" class="subnav selected hasChildren">
+                            <a href="#" >Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="MAIN_movingArea">
+            <div id="MAIN_container">
+                <div id="MAIN_nudgeArrow"></div>
+                <div id="MAIN_breadcrumbContainer">
+                    <div id="MAIN_breadcrumbContent">
+                        <div id="breadcrumbs">
+                            <div class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+                                <a href="index.html" itemprop="url"> <span itemprop="title">Home</span></a>
+                                <div itemprop="child" itemscope itemtype="#" class="breadcrumb">/ <a class="breadEnd" href="#" itemprop="url">
+                                    <span itemprop="title">Blog</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="MAIN_contentContainer">
+
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+
+                            <div class="post">
+                                <h1 class="title">Zambezi Queen: Ultra-Luxury Meets The Chobe River</h1>
+                                <div class="post-meta">
+                                    <span class="small">By</span>
+                                    <span class="author vcard">
+                                        <span class="fn">
+                                            <a href="#" title="Posts by Danielle Fear">Danielle Fear</a>
+                                        </span>
+                                    </span>
+                                    <span class="small">on</span>
+                                    <abbr class="date time published">February 2, 2016</abbr>
+                                    <span class="small">in</span>
+                                    <span class="categories">
+                                        <a href="#">Cruise Destinations</a>,
+                                        <a href="#">Cruise Info</a>,
+                                        <a href="#">River Cruising</a>
+                                    </span>
+                                </div>
+                                <div class="entry">
+                                    <p><img class="aligncenter img-responsive" src="images/no-image.jpg" alt="Zambezi_Queen_Exterior"></p>
+                                    <p>You are unlikely to find another vessel on earth that is as unique and luxurious as Zambezi
+                                        Queen, she is in a category all her own and offers stunning wildlife voyages deep in the heart
+                                        of Africa.</p>
+                                    <p>Built in the 1990’s, <a href="#" target="_blank">Zambezi
+                                        Queen</a> originally carried guests on an extended journey from Katima Mulilo down the Chobe and
+                                        Zambezi Rivers and back, however, she ended up being moored for quite some time and acted as a
+                                        floating hotel in the Caprivi Region of Namibia. In 2008, she was restored to her former glory,
+                                        had an additional deck added and was entirely re-designed on the inside by South African fashion
+                                        designer Jenni Button. Zambezi Queen now offers her guests voyages along the banks of the Chobe
+                                        River in south-central Africa.</p>
+
+
+                                    <!-- Start Sociable -->
+                                    <div class="sociable">
+                                        <div class="sociable_tagline">Be Sociable, Share!</div>
+                                    </div>
+
+                                    <div id="post-author">
+                                        <div class="profile-image">
+                                            <img alt="" src="images/avatar.png" class="avatar">
+                                        </div>
+                                        <div class="profile-content">
+                                            <h4>About Danielle Fear</h4>
+                                            <div class="profile-link">
+                                                <a href="#"> View all posts by Danielle Fear <span class="meta-nav">→</span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-utility">
+                                        <p class="tags icon">
+                                            <i class="fa fa-tags"></i>
+                                            <a href="#">AMA Waterways</a>,
+                                            <a href="#">Cruise Destinations</a>,
+                                            <a href="#">featured posts</a>,
+                                            <a href="#">Luxury Cruises</a>,
+                                            <a href="#">Safari</a>,
+                                            <a href="#">Shore Excursions</a>,
+                                            <a href="#">South Africa</a>,
+                                            <a href="#">Zambezi Queen</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6 paging clearfix">
+                                    <?php $prev_post = get_previous_post();
+                                         if (!empty( $prev_post )) : ?>
+                                    <a class="btn btn-outline pull-left" href="<?php echo get_permalink($prev_post->ID); ?>">
+                                        <i class="icon-arrow-left2 left"></i>
+                                        <span>Older</span>
+                                        <span class="hidden-xs"> Posts</span>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
+                                <div class="col-sm-6 col-xs-6 paging next-link clearfix">
+                                    <?php $next_post = get_next_post();
+                                         if (!empty($next_post)) : ?>
+                                    <a class="btn btn-outline pull-left" href="<?php echo get_permalink($next_post->ID); ?>">
+                                        <span>New</span>
+                                        <span class="hidden-xs"> Posts</span>
+                                        <i class="icon-arrow-right2 right"></i>
+                                    </a>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+                            <?php comments_template( '', true ); ?>
+
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="blog-sidebar">
+                                <div id="smcwidget-1" class="socialmedia">
+                                    <h3>Connect with us</h3><hr>
+                                    <ul class="socialmedia-container">
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div id="categories-2" class="widget widget_categories">
+                                    <h3>Blog Categories</h3><hr>
+                                    <label class="screen-reader-text" for="cat">Blog Categories</label>
+                                    <select name="cat" id="cat" class="postform">
+                                        <option value="-1">Select Category</option>
+                                        <option class="level-0" value="242">Adventure cruises&nbsp;&nbsp;(6)</option>
+                                        <option class="level-0" value="37">Cruise Destinations&nbsp;&nbsp;(71)</option>
+                                        <option class="level-0" value="174">Cruise Food&nbsp;&nbsp;(6)</option>
+                                        <option class="level-0" value="2">Cruise Funnies&nbsp;&nbsp;(8)</option>
+                                        <option class="level-0" value="3">Cruise Info&nbsp;&nbsp;(135)</option>
+                                        <option class="level-0" value="246">Cruise News&nbsp;&nbsp;(7)</option>
+                                        <option class="level-0" value="249">Cruise Offers&nbsp;&nbsp;(8)</option>
+                                        <option class="level-0" value="5">Cruise Photos&nbsp;&nbsp;(10)</option>
+                                        <option class="level-0" value="6">Cruise Reviews&nbsp;&nbsp;(40)</option>
+                                        <option class="level-0" value="324">Expedition Cruises&nbsp;&nbsp;(5)</option>
+                                        <option class="level-0" value="181">Guest Speakers&nbsp;&nbsp;(1)</option>
+                                        <option class="level-0" value="273">Luxury Family Cruising&nbsp;&nbsp;(1)</option>
+                                        <option class="level-0" value="271">River Cruising&nbsp;&nbsp;(5)</option>
+                                    </select>
+                                </div>
+
+                                <div id="archives-2" class="widget widget_archive">
+                                    <h3>Blog Archives</h3><hr>
+                                    <label class="screen-reader-text" for="archives-dropdown-2">Blog Archives</label>
+                                    <select id="archives-dropdown-2" name="archive-dropdown" onchange="">
+                                        <option value="">Select Month</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2016/02/"> February 2016 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2016/01/"> January 2016 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/12/"> December 2015 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/11/"> November 2015 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/10/"> October 2015 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/09/"> September 2015 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/08/"> August 2015 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/07/"> July 2015 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/06/"> June 2015 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/05/"> May 2015 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/04/"> April 2015 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/03/"> March 2015 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/02/"> February 2015 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2015/01/"> January 2015 &nbsp;(7)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/12/"> December 2014 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/11/"> November 2014 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/10/"> October 2014 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/09/"> September 2014 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/08/"> August 2014 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/07/"> July 2014 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/06/"> June 2014 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/05/"> May 2014 &nbsp;(7)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/04/"> April 2014 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/03/"> March 2014 &nbsp;(8)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/02/"> February 2014 &nbsp;(7)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2014/01/"> January 2014 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/12/"> December 2013 &nbsp;(10)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/11/"> November 2013 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/10/"> October 2013 &nbsp;(8)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/09/"> September 2013 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/08/"> August 2013 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/07/"> July 2013 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/06/"> June 2013 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/05/"> May 2013 &nbsp;(5)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/04/"> April 2013 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/03/"> March 2013 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/02/"> February 2013 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2013/01/"> January 2013 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/12/"> December 2012 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/11/"> November 2012 &nbsp;(6)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/10/"> October 2012 &nbsp;(8)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/09/"> September 2012 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/08/"> August 2012 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/07/"> July 2012 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/06/"> June 2012 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/05/"> May 2012 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/04/"> April 2012 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/03/"> March 2012 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/02/"> February 2012 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2012/01/"> January 2012 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/12/"> December 2011 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/11/"> November 2011 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/10/"> October 2011 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/09/"> September 2011 &nbsp;(2)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/08/"> August 2011 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/07/"> July 2011 &nbsp;(1)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/06/"> June 2011 &nbsp;(3)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/05/"> May 2011 &nbsp;(4)</option>
+                                        <option value="http://www.cruiseline.co.uk/blog/2011/04/"> April 2011 &nbsp;(2)</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="MAIN_footerContainer">
+                <div id="MAIN_footerArrow"></div>
+                <div id="MAIN_footerInner">
+                    <div id="MAIN_footerLinks">
+                        <div class="MAIN_footerHeader">Get in touch</div>
+                        <div class="MAIN_footerLeft">
+                            <div class="MAIN_footerSubHeader">The Royal Automobile Club<br>Motor Sports Association Limited </div>
+                            <div class="MAIN_footerBody">Registered Office as above, Registered Number 1344829. VAT Number 242304895 </div>
+                        </div>
+                        <div class="MAIN_footerRight">
+                            <div class="MAIN_footerAddressHeader">Address:</div>
+                            <div>
+                                <div class="textBlockLeft MAIN_footerAddressContent">Motor Sports House,<br/>Riverside Park,<br/>Colnbrook,<br/>SL3 0HG</div>
+                                <div class="textBlockRight"><span>Tel:</span> +44 (0)1753 765000</div>
+                                <div class="textBlockLeft hideOnMobile"><span>Competition Licence Section:</span>+44(0)1753 765050 </div>
+                                <div class="textBlockRight"><span>Fax:</span> +44 (0)1753 682938</div>
+                            </div>
+                            <div class="textBlockBelow showOnMobile hideOnDesktop">
+                                <span>Competition Licence Section: </span> +44(0)1753 765050
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="MAIN_footerBottom">
+                    &copy;2016 MSA &amp; <span class="lcase">mso</span>
+                    <div class="footerRightLinks">
+                        <a href="Terms-Conditions.html">Terms &amp; Conditions</a>
+                        <a href="Data-Protection.html">Data Protection</a>
+                        <a href="Sitemap.html">Sitemap</a>
+                        <a href="Cookie-and-Legal-Policy.html">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="showOnMobile hideOnDesktop MAIN_FooterFullSiteButton">
+                <a href="https://www.msauk.org/">Click Here to View Full Site</a>
+            </div>
+        </div>
+    </div><!-- MAIN_movingArea -->
+</div>
+
+
+</body>
+
+</html>

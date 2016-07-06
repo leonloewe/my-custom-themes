@@ -1,0 +1,55 @@
+.theme_options_panel *{box-sizing:border-box}
+.theme_options_panel a:focus{-webkit-box-shadow:none;box-shadow:none}
+.theme_options_panel label{color:#23282D;font-weight:700}
+.theme_options_panel form .aside{display:flex;width:100%;background-color:#23282D;border-radius:0}
+.theme_options_panel form .main{width:75%;float:left;background-color:#f8f9f9;padding:15px;border-right:1px solid #23282D;border-radius:0}
+.theme_options_panel .aside h2{color:#fff;padding:0;background:url(images/ico-sub-active.png) 10px center no-repeat;padding-left:25px}
+.theme_options_panel form .aside_body{width:25%;float:left;background-color:#23282D;margin-top:0;padding-top:0;border-radius:0}
+.theme_options_panel form .aside .aside_body ul.menu{margin-bottom:-15px}
+.theme_options_panel form .aside .aside_body li{padding-left:10px;border:none;background:transparent;font-weight:400;color:#fff}
+.theme_options_panel form .theme_img{display:block;max-width:100px;height:auto}
+.theme_options_panel li.ui-state-active{background-color:#23282D}
+.theme_options_panel .aside .aside_body li li{margin:0;display:none}
+.theme_options_panel form .aside .aside_body li li a{padding-left:30px}
+.theme_options_panel form .aside .aside_body li:hover li{display:block}
+.theme_options_panel form .aside .aside_body li:hover{background-color:#32373C;width:100%;border-radius:0}
+.ui-tabs-active{background-color:#32373C!important;width:100%;border-radius:0}
+.theme_options_panel form .aside .aside_body li a{color:#fff;text-decoration:none;font-size:20px;padding:20px 70px;display:block}
+.theme_options_panel .main h2{background-color:#E44745;color:#fff;margin:-15px;padding:15px;padding-left:30px}
+.theme_options_panel .main h2 .dashicons{margin-left:5px;margin-top:5px}
+.theme_options_panel .main .main_body{margin-top:30px}
+.theme_options_panel form .main tr{border-bottom:2px solid #ebecec}
+.theme_options_panel form .main tr:last-child{border-bottom:none}
+.theme_options_panel .main tr td{padding:30px 10px}
+.theme_options_panel #pages tr td{padding:0 10px}
+.theme_options_panel .accordion{padding-top:20px}
+.theme_options_panel .accordion .ui-accordion-header{background-color:#bcbcbc;padding:5px;color:#fff}
+.theme_options_panel .main tr td:last-child input[type='text'],.theme_options_panel .main tr td:last-child input[type='file'],.theme_options_panel .main tr td:last-child textarea,.theme_options_panel .main tr td:last-child select{width:50%}
+.theme_options_panel .ui-accordion-header{cursor:pointer;outline:none}
+.theme_options_panel .ui-accordion-content{height:auto}
+.theme_options_panel input[type="submit"]{color:#fff;background-color:#e44745;border:none;padding:5px 15px;font-size:16px;border-radius:5px;cursor:pointer}
+.theme_options_panel .submit-container{background-color:#23282D}
+.theme_options_panel .main tr td:last-child input[type='text'],.theme_options_panel .main tr td:last-child input[type='file'],.theme_options_panel .main tr td:last-child textarea,.theme_options_panel .main tr td:last-child select{width:80%}
+.theme_options_panel tr td:first-child{width:30%}
+.header-tab{background:url(images/header.png) no-repeat 0}
+.footer-tab{background:url(images/footer.png) no-repeat 0}
+.social-tab{background:url(images/social.png) no-repeat 0}
+.fonts-tab{background:url(images/font.png) no-repeat 0}
+.colors-tab{background:url(images/color.png) no-repeat 0}
+.contact-tab{background:url(images/contact.png) no-repeat 0}
+.script-tab{background:url(images/custom.png) no-repeat 0}
+.general-tab{background:url(images/setting.png) no-repeat 0}
+.popup-tab{background:url(images/popup-icon.png) no-repeat 0}
+.theme_options_panel .wp-picker-open + .wp-picker-input-wrap{display:block}
+.theme_options_panel .wp-color-result{height:24px}
+.wrap h2{background-color:#23282D;color:#fff;font-weight:700;padding:10px;font-size:25px;margin:16px 0}
+.submit-container{border:1px solid #23282D;padding:15px}
+.file-uploader,.file-delete{cursor:pointer;margin-right:10px;width:50px}
+img.theme_img{border:2px solid #bebebe}
+#tabs .main:not(#general){display:none}
+.text-right{text-align:right}
+.pull-left{float:left}
+.capitalize{text-transform:capitalize}
+.ui-widget-content{background:transparent}
+.ui-widget-header{border:none;background:transparent}
+.ui-widget-content{border:none}
